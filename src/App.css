@@ -1,38 +1,490 @@
-.App {
+*{
+  font-family: 'Baloo Da 2', cursive !important;
+  /* overflow-x: hidden; */
+  box-sizing: border-box;
+  margin: 0;
+}
+a{
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  overflow-x: hidden;
+  /* background-image: linear-gradient( #fbc2eb 0%, #a6c1ee);
+  background-position-y: 60vh;
+  background-size: 60%; */
+}
+
+main{
+  display: flex;
+  max-width: 95vw;
+  position: relative;
+  /* gap: 1rem; */
+  /* justify-content: space-around; */
+  margin: 0rem auto;
+  z-index: 100;
+  /* background-color: white; */
+}
+.course__top__section{
+  width: 60%;
+  /* text-align: center; */
+  /* align-content: center; */
+  display: grid;
+  place-items: center;
+  margin: auto;
+  margin-left: 1rem;
+  z-index: 1000;
+  /* overflow-x: hidden; */
+}
+/* .course__top__section div{
+  width: 95%;
+  margin: auto;
+} */
+.course__top{
+  
+  /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 16%, #FFCC70 100%); */
+/* background-color: #4158D0; */
+
+/* overflow-x: hidden; */
+/* position: absolute;
+top: 0; */
+}
+.box__class_tab{
+  width: 60%;
+  padding-top: 1rem;
+
+}
+
+.course__top_wrapper{
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.top_text_content{
+  width: 60%;
+}
+
+.top-h1{
+
+}
+.top-p{
+ text-align: justify;
+}
+.top-image{
+  width: 60%;
+}
+.top-image img{
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px ;
+}
+
+.course__top_wrapper .tabs{
+  display: flex;
+  justify-content: space-around;
+}
+.course__description > div{
+  font-weight: 400;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.8);
+}
+.course__description > div > p{
+  line-height: 1.9rem;
+}
+.card__s{
+  background-color:#E1EAF1;
+  /* min-width: 100%; */
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.card__s:hover{
+  box-shadow: 4px 4px 11px -4px rgb(0 0 0 / 22%);
+}
+.card__header{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+.card__img{
+  height: 80px;
+  width: 80px;
+  /* padding: 2rem; */
+  /* background-color: #4158D0; */
+  /* border-radius: 50%; */
+
+}
+.card__img > svg{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  /* padding: 1rem; */
+}
+
+.card__text{
+  
+}
+.card__body{
+  line-height: 1.9rem;
+  padding-top: 1rem;
+  text-align: justify;
+}
+
+.email__subcription{
+
+}
+.form__sub{
+  width: 100%;
+}
+.form__contrl{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  /* max-width: 100%; */
+}
+
+.input__fields{
+  width: 90%;
+  padding: .7rem;
+}
+.input__fields input, select{
+  width: 80%;
+  padding: .2rem;
+  border: none;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 18%);
+  outline: none;
+}
+
+
+.input__fields input[type="button"]{
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  width: 100%;
+  text-transform: uppercase;
+  word-spacing: 1px;
+  font-size: 1rem;
+  padding: .8rem;
+  border: 1px solid rgb(101, 101, 101);
+ 
+}
+
+
+.course__end__part{
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  /* justify-content: flex-start; */
+  /* align-items: baseline; */
+
+}
+.course__end__part__left{
+  padding: .5rem;
+  
+}
+.course__end__part__right > p{
+  text-align: justify;
+}
+.gutter__div{
+  margin: 2rem 0;
+}
+
+
+
+
+
+
+
+/**************************** project and assignment css *************************/
+.project__assignment_lists{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.project__assignment_lists .card__s .card__top{
+
+}
+.project__assignment_lists .card__s .card__top{
+
+}
+.project__assignment_lists .card__s .card__top{
+  display: flex;
+  margin-bottom: 1rem;
+  
+}
+
+.project__assignment_lists .card__s .card__top > div{
+  margin: 0 .5rem;
+  background-color: #C850C0;
+  border-radius: 50px;
+
+}
+
+.project__assignment_lists .card__s .card__top > div > span {
+  padding: .5rem;
+  font-weight: 500;
+  color: white;
+
+}
+
+
+
+/*************************************** carrer track div ************************************/
+.career__track{
+  background-color: #EDA48D;
+  /* min-width: 100%; */
+  padding: 2rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.career__track__div{
+
+}
+.career__track__wrapper{
+
+}
+
+/************************************* commnets slider **************************************************/
+.carosol{
+  /* padding: 1rem; */
+  background-color: #ccc;
+  width: 98%;
+  margin: auto;
+  border-radius: 5px;
+  transition: all 3s ease-in;
+
+}
+.carosel__div{
+  border-radius: 5px;
+  display: block;
+  /* justify-content: center;
+  flex-direction: column;
+  align-items: center; */
+  padding: 1rem;
+}
+
+.carosel__div__top{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carosel__div__middle{
+  width: 90%;
+  margin: auto;
+}
+.carosel__div__middle p{
+  line-height: 2rem;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.carosel__div__bottom{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  width: 50%;
+  margin: auto;
+}
+.user__profile__img{
+  padding: 1rem;
+}
+.user__profile__img img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.user__profile__name{
+
+}
+.user__profile__name span{
+  font-weight: 600;
+}
+.comment__slider{
+
+}
+.slick-dots > button{
+  padding: 0;
+  background: #aaa;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+  font-size: 0;
+  outline: 0;
+}
+
+/************************************* faq **************************************************/
+
+.faq__div{
+
+}
+
+
+
+
+/********************************************* sticky sidebar *******************************/
+.sticky__sidebar__section{
+  max-width: 50%;
+  max-height: 30rem;
+  background-color: #fa3490;
+  border-radius: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2rem !important ;
+  right: 10%  !important;
+  /* z-index: 999; */
+}
+
+.sticky__sidebar__wrapper{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  padding: .8rem;
+}
+.sticky__sidebar__wrapper h3{
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.sticky__syllabus__content{
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sticky__content_div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sticky__content_div .sticky__icon{
+  margin-right: .5rem;
+  color: #c5c13e;
+
+}
+.sticky__content_div .sticky__content{
+
+  font-weight: 500;
+}
+.coures__pricing{
+  background-color:#f174bd;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  border-radius: 5px;
+}
+.coures__pricing > span{
+  font-size: 1.2rem;
+  font-weight: 600;
+
+}
+.coures__pricing .course__amount{
+  font-weight: 800;
+}
+
+.div__overlay{
+  width: 100vw;
+  height: 65vh;
+  background-color: #f174bd;
+  position: absolute;
+  left: 0;
+}
+.sticky__btn{
+  padding: 1rem 0;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  gap: .9rem;
+}
+.sticky__btn> div{
+  min-width: 40%;
+}
+.sticky__btn > a{
+  cursor: pointer;
+}
+
+.sticky__btn  span{
+  background-color: #f174bd;
+  padding: 1.2rem;
+  border-radius: 10px;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+
+
+.tabs button[aria-selected="true"]{
+  background-color: rgb(228, 62, 162);
+  color: black;
+}
+
+footer{
+  height: 40vh;
+  background-color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************** */
+@media only screen and (max-width: 1200px) {
+  main{
+    width: 100vw;
+    /* overflow-x: hidden; */
   }
-  to {
-    transform: rotate(360deg);
+
+  .sticky__sidebar__section{
+    width: 38%;
+    height: 40rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  main{
+    display: block;
+    /* align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse; */
+    width: 100vw;
+  }
+  .course__top__section{
+    width: 100%;
+  }
+  .course__top__section > div {
+    width: 100%;
+  }
+  .sticky__sidebar__section{
+    display: block;
+    width: 90vw;
+
+    /* max-width: 50%; */
+  /* position: -webkit-sticky; */
+  /* position: sticky; */
+  /* top: 2rem !important ;
+  right: 10%  !important; */
+  position: relative;
+
   }
 }
