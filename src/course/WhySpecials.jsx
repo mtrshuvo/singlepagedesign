@@ -4,11 +4,15 @@ import { Html } from "@mui/icons-material";
 const WhySpecials = () => {
   return (
     <>
-      <div className="course__description">
+      <div className="why__specials course__description">
         <div>
           <h3>বহুব্রীহির ক্যারিয়ার ট্র্যাক প্রোগ্রাম এতো স্পেশাল কেনো?</h3>
         </div>
+        <div className="gutter__div"></div>
+
         <hr />
+    <div className="gutter__div"></div>
+
         <div>
           <p>
             কিছু ‘অস্বাভাবিক’ সুবিধার জন্য এটি স্পেশাল – যেগুলো রেগুলার অনলাইন
@@ -18,7 +22,11 @@ const WhySpecials = () => {
           </p>
         </div>
       </div>
+    <div className="gutter__div"></div>
+
       <hr />
+      <div className="gutter__div"></div>
+
       <div className="gutter__div">
         <div className="card__s">
           <div className="card__header">

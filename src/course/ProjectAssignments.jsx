@@ -9,12 +9,16 @@ import ModalImage from "react-modal-image";
 
 const ProjectAssignments = () => {
     return (
-        <>
+        <div className="course__description__main">
             <div className="course__description">
                 <div>
                     <h3>কী কী শিখবেন এ কোর্স থেকে?</h3>
                 </div>
+    <div className="gutter__div"></div>
+
                 <hr />
+                <div className="gutter__div"></div>
+
                 <div>
                     <p>
                         একজন ফ্রন্ট-এন্ড ওয়েব ডেভেলপার হয়ে ওঠার জন্য আপনাকে একটি ওয়েবসাইট বা
@@ -24,9 +28,11 @@ const ProjectAssignments = () => {
                     </p>
                 </div>
             </div>
+            <div className="gutter__div"></div>
 
             <hr />
 
+                <div className="gutter__div"></div>
             <div className="project__assignment_lists">
                 <div className="card__s">
                     <div className="card__top">
@@ -113,7 +119,8 @@ const ProjectAssignments = () => {
                     <div className="card__bottom">Book List project</div>
                 </div>
             </div>
-        </>
+
+        </div>
     );
 };
 
